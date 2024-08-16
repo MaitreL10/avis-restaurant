@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avis sur le restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .rating-button {
+            display: block;
+            width: 200px;
+            margin: 10px auto;
+            padding: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+            background-color: #f0f0f0;
+            transition: background-color 0.3s ease;
+        }
+        .rating-button:hover {
+            background-color: #dcdcdc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Donnez votre avis</h1>
+
+    <button class="rating-button" onclick="handleClick(1)">★☆☆☆☆</button>
+    <button class="rating-button" onclick="handleClick(2)">★★☆☆☆</button>
+    <button class="rating-button" onclick="handleClick(3)">★★★☆☆</button>
+    <button class="rating-button" onclick="handleClick(4)">★★★★☆</button>
+    <button class="rating-button" onclick="handleClick(5)">★★★★★</button>
+
+    <script>
+        function handleClick(rating) {
+            if (rating <= 3) {
+                window.location.href = "VOTRE_LIEN_GOOGLE_FORM";
+            } else {
+                window.location.href = "VOTRE_LIEN_GOOGLE_RESTAURANT";
+            }
+        }
+    </script>
+
+</body>
+</html>
